@@ -32,7 +32,8 @@ A CCNA 200-301 security lab built in Cisco Packet Tracer to practice DHCP Snoopi
            UNTRUSTED  UNTRUSTED  UNTRUSTED
            
 
-How DHCP Snooping and DAI Work Together
+ ## How DHCP Snooping and DAI Work Together
+ 
               DHCP Snooping
                     |
                     v
@@ -72,5 +73,5 @@ Key CCNA Takeaways
  - DHCP Snooping creates a binding table containing client information.
  - DAI is enabled per VLAN with ip arp inspection vlan <vlan-id>.
  - DAI normally inspects ARP received on untrusted ports.
-DAI can use DHCP Snooping bindings to validate ARP information.
-Trust should be applied carefully because trusted ports bypass the intended inspection path.
+ - DAI can use DHCP Snooping bindings to validate ARP information.
+ - Trust should be applied carefully because trusted ports bypass the intended inspection path.
