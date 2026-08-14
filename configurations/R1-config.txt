@@ -1,0 +1,19 @@
+IP Addressing:
+| Device     | IP Address     | VLAN | Switch Port |
+| ---------- | -------------- | ---: | ----------- |
+| R1 G0/0.10 | 192.168.1.1/24 |   10 | Fa0/3       |
+| PC1        | 192.168.1.11   |   10 | Fa0/1       |
+| PC2        | 192.168.1.12   |   10 | Fa0/2       |
+| PC3        | 192.168.1.13   |   10 | Fa0/4       |
+
+R1 DHCP Configuration:
+ip dhcp excluded-address 192.168.1.2 192.168.1.10
+!
+ip dhcp pool POOL1
+ network 192.168.1.0 255.255.255.0
+ default-router 192.168.1.1
+ dns-server 8.8.8.8
+!
+interface GigabitEthernet0/0.10
+ encapsulation dot1Q 10
+ ip address 192.168.1.1 255.255.255.0
