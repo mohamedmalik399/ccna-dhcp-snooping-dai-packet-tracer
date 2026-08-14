@@ -58,19 +58,19 @@ Dynamic ARP Inspection
 DAI uses the binding information to validate ARP messages received on untrusted interfaces.
 Verification Commands:
 show vlan brief
-show interfaces trunk
-show ip dhcp pool
-show ip dhcp binding
-show ip dhcp snooping
-show ip dhcp snooping binding
-show ip arp inspection
-show ip arp inspection interfaces
+ - show interfaces trunk
+ - show ip dhcp pool
+ - show ip dhcp binding
+ - show ip dhcp snooping
+ - show ip dhcp snooping binding
+ - show ip arp inspection
+ - show ip arp inspection interfaces
 
 Key CCNA Takeaways
-DHCP Snooping ports toward legitimate DHCP servers are trusted.
-End-host ports should normally remain untrusted.
-DHCP Snooping creates a binding table containing client information.
-DAI is enabled per VLAN with ip arp inspection vlan <vlan-id>.
-DAI normally inspects ARP received on untrusted ports.
+ - DHCP Snooping ports toward legitimate DHCP servers are trusted.
+ - End-host ports should normally remain untrusted.
+ - DHCP Snooping creates a binding table containing client information.
+ - DAI is enabled per VLAN with ip arp inspection vlan <vlan-id>.
+ - DAI normally inspects ARP received on untrusted ports.
 DAI can use DHCP Snooping bindings to validate ARP information.
 Trust should be applied carefully because trusted ports bypass the intended inspection path.
