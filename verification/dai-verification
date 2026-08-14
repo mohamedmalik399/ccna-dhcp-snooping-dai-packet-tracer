@@ -1,0 +1,14 @@
+SW1#show ip arp inspection interfaces
+
+Interface        Trust State     Rate(pps)    Burst Interval
+---------------  -----------     ---------    --------------
+Fa0/1            Untrusted              15                 1
+Fa0/2            Untrusted              15                 1
+Fa0/3            Trusted                15                 1
+Fa0/4            Untrusted              15                 1
+
+SW1#show ip arp inspection
+
+Vlan     Configuration    Operation
+----     -------------    ---------
+10       Enabled          Active
