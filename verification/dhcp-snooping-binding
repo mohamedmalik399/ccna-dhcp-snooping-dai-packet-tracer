@@ -1,0 +1,9 @@
+SW1#show ip dhcp snooping binding
+
+MacAddress          IpAddress        Lease(sec)  Type           VLAN  Interface
+------------------  ---------------  ----------  -------------  ----  -----------------
+00:0B:BE:56:2D:77   192.168.1.11     0           dhcp-snooping  10    FastEthernet0/1
+00:60:47:79:49:9A   192.168.1.12     0           dhcp-snooping  10    FastEthernet0/2
+00:E0:F9:97:93:4A   192.168.1.13     0           dhcp-snooping  10    FastEthernet0/4
+
+Total number of bindings: 3
